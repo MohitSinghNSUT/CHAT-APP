@@ -10,7 +10,7 @@ const { addUser, removeUser, getUser, getUserInRoom } = require("./users.js");
 dotenv.config();
 const PORT = process.env.PORT || 3000;
 const corsOptions = {
-  origin: "http://localhost:5173", // Make sure this matches the frontend's URL
+  origin: "https://mohitnsutchatapp.netlify.app/", // Make sure this matches the frontend's URL
   methods: ["GET", "POST"],
   credentials: true,
 };
