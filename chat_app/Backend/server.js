@@ -10,7 +10,7 @@ const { addUser, removeUser, getUser, getUserInRoom } = require("./users.js");
 dotenv.config();
 const PORT = process.env.PORT || 3000;
 const corsOptions = {
-  origin: ["https://mohitnsutchatapp.netlify.app/","https://stunning-fox-638eea.netlify.app"], // Make sure this matches the frontend's URL
+  origin: ["https://mohitnsutchatapp.netlify.app/","https://stunning-fox-638eea.netlify.app","https://chat-app-1-p7pk.onrender.com"], // Make sure this matches the frontend's URL
   methods: ["GET", "POST"],
   credentials: true,
 };
