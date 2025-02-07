@@ -1,0 +1,11 @@
+.input{
+    width: 45vw;
+    height: 5vh;
+}
+.btn{
+    margin: 0;
+    width: 5.7vw;
+    height: 5.5vh;
+    background: rgb(75, 75, 187);
+    color: aliceblue;
+}

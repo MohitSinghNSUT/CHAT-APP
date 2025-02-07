@@ -1,0 +1,13 @@
+.Info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background: rgb(163, 163, 241);
+    color: aliceblue;
+    font-size: 20px;
+}
+.Online{
+    display: flex;
+    align-items: center;
+}

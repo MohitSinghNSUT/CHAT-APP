@@ -1,0 +1,8 @@
+.completeMessages{
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+
+    width: 50vw;
+    height: 50vh;
+}

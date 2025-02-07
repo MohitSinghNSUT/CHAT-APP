@@ -1,0 +1,16 @@
+*{
+margin: 0;
+padding: 0;
+}
+.joinOuter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.joinInner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}

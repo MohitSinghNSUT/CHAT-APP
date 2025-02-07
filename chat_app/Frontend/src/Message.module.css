@@ -1,0 +1,27 @@
+.otherUser{
+    border: 0.2px solid black;
+    /* width: auto; */
+    display: flex;
+    padding: 2px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 2px;
+    margin: 4px;
+}
+.sentName{
+    font-size: 10px;
+}
+.text{
+    font-size: 15px;
+}
+.currentUser{
+    border: 0.2px solid black;
+    display: flex;
+    padding: 2px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    gap: 2px;
+    margin: 4px;
+}
