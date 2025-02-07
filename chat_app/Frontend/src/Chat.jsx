@@ -15,7 +15,7 @@ export const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [allUsers, setAllUsers] = useState([]);
   const [userCount, setUserCount] = useState(0);
-  const ENDPOINT = "http://localhost:3000";
+  const ENDPOINT = "https://chat-app-uasl.onrender.com";
 
   // Initialize the socket connection outside the useEffect
   const socket = useMemo(() => io(ENDPOINT), [ENDPOINT]);
