@@ -62,7 +62,11 @@ io.on("connection", (socket) => {
     console.log("getting users", users, room);
     io.to(room).emit("allUsers", users);
   });
-
+  socket.on("input-change", ({ name, room }, callback) => {
+    console.log(name, room, "input change");
+    socket.broadcast.to(room).emit("other-input-change", name);
+    callback();
+  });
   socket.on("disconnect", () => {
     const user = removeUser({ id: socket.id });
     console.log(socket.id, user);
