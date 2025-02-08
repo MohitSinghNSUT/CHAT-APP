@@ -22,9 +22,11 @@ export const Chat = () => {
 
   useEffect(() => {
     // Parse the URL query string to get the room and name
-    const { room, name } = queryString.parse(location.search);
-    setName(name);
-    setRoom(room);
+    const myData=JSON.parse(localStorage.getItem("myData"));
+    const {name,room}=myData;
+    console.log(myData,"from locals torage");
+    setName(myData.name);
+    setRoom(myData.room);
 
     // Emit 'join' event to server after joining the room
     socket.emit("join", { name, room }, (error) => {
