@@ -7,9 +7,13 @@ export const Join = () => {
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
   const navigate = useNavigate();
-  const handleSubmit=()=>{
-    if(room && name)
-    navigate(`/chat?name=${name}&room=${room}`)
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    if(room && name){
+      const data = { name, room };
+      localStorage.setItem("myData",JSON.stringify(data));
+    }
+    navigate(`/chat`)
   }
   return (
     <>
